@@ -332,14 +332,14 @@ img {
   background: url("../img/decor/side-leaf.png") left top 57% no-repeat;
 }
 .benefits-section:before {
-  content: url("../img/bars-and-berries.png");
-  position: relative;
+  content: url("../img/decor/bars-and-berries.png");
+  position: absolute;
   bottom: -80px;
   left: 0;
 }
 
 .reviews__display {
-  background: #f8faf9;
+  background: url("../img/decor/drown-berries.png") right top no-repeat #f8faf9;
   padding: 50px 45px 34px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -393,12 +393,25 @@ img {
 
 .reviews__text {
   margin-bottom: 36px;
+  margin-right: 90px;
 }
 
 .reviews__author {
   font-size: 18px;
   font-weight: bold;
   color: black;
+}
+
+.reviews__switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .interactive-avatar {
@@ -428,4 +441,127 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.form__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__input {
+  width: 100%;
+  padding: 18px 11px;
+  border: solid 3px transparent;
+}
+.form__input--textarea {
+  height: 180px;
+  resize: none;
+}
+.form__input:focus {
+  border-color: #dee2bd;
+  outline: none;
+}
+
+.form__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 0;
+}
+.radio--checkbox:before {
+  background: url("../img/icons/tick.png") center center no-repeat;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible:before {
+  display: block;
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+}
+.radio__visible:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #365a49;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.order-section {
+  background: url("../img/decor/lonely-blackberry.png") bottom 14% left 2% no-repeat, url("../img/decor/lonely-leaf.png") right 1% bottom 16% no-repeat, url("../img/decor/blackberry-and-leaves.png") right top -10% no-repeat, url("../img/bg/order.jpg") center center/cover no-repeat;
+  color: #0b4d3c;
+}
+
+.reviews-section {
+  background: url("../img/decor/strawberry-cereal.png") right 20px top 10px no-repeat, url("../img/decor/assorted-berries.png") left 4px bottom -87px no-repeat, url("../img/decor/side-round-leaf.png") left 0 bottom -160px no-repeat;
+}
+.reviews-section:before {
+  background: url("../img/decor/side-round-leaf.png");
+  width: 102px;
+  height: 321px;
+  bottom: -160px;
+  left: 0;
+}
+.reviews-section:after {
+  background: url("../img/decor/assorted-berries.png");
+  width: 135px;
+  height: 193px;
+  bottom: -87px;
+  left: 4px;
 }

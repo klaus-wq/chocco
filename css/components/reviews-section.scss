@@ -1,0 +1,21 @@
+.reviews-section {
+    background: url("../img/decor/strawberry-cereal.png") right 20px top 10px no-repeat,
+    url("../img/decor/assorted-berries.png") left 4px bottom -87px no-repeat, 
+    url("../img/decor/side-round-leaf.png") left 0 bottom -160px no-repeat;
+  
+    &:before {
+      background: url("../img/decor/side-round-leaf.png");
+      width: 102px;
+      height: 321px;
+      bottom: -160px;
+      left: 0;
+    }
+
+    &:after {
+      background: url("../img/decor/assorted-berries.png");
+      width: 135px;
+      height: 193px;
+      bottom: -87px;
+      left: 4px;
+    }
+}

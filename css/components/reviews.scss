@@ -1,5 +1,5 @@
 .reviews__display {
-    background: #f8faf9;
+    background: url("../img/decor/drown-berries.png") right top no-repeat #f8faf9;
     padding: 50px 45px 34px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -48,10 +48,17 @@
 
 .reviews__text {
     margin-bottom: 36px;
+    margin-right: 90px;
 }
 
 .reviews__author {
     font-size: 18px;
     font-weight: bold;
     color: black;
+}
+
+.reviews__switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
