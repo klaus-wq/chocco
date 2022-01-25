@@ -4,6 +4,8 @@ $baseFontSize: 18px;
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
+$z-fixed-menu: 100;
+
 @import "https://cdnjs.cloudfare.com/ajax/normalize.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,300;1,400&display=swap');
@@ -25,3 +27,4 @@ $darkGreen: #0b4d3c;
 @import "components/radio.scss";
 @import "components/order-section.scss";
 @import "components/reviews-section.scss";
+@import "components/fixed-menu.scss";
